@@ -16,7 +16,7 @@ In this updated version:
 ## ⚙️ Marks Calculation Logic
 Calculates weighted Continuous Assessment (CAE I) marks from 50 raw subject marks:
 
-$$	ext{Subject Score} = (	ext{Raw Mark} 	imes 2) 	imes 0.2$$
+$$\text{Subject Score} = (\text{Raw Mark} \times 2) \times 0.2$$
 
 ### Included Subjects (Total: 100 Marks):
 1. **Mathematics** (Max 20 Marks)
@@ -35,7 +35,8 @@ To make the shared global scoreboard work across all internet users:
 2. Select **Firestore Database** -> Click **Create Database** -> Choose **Start in test mode**.
 3. Register a Web App in Firebase Settings to get your `firebaseConfig` keys.
 4. Open `script.js` and replace lines `16-23` with your configuration keys:
-   ```javascript
+   
+```javascript
    const firebaseConfig = {
        apiKey: "YOUR_FIREBASE_API_KEY",
        authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
@@ -44,23 +45,3 @@ To make the shared global scoreboard work across all internet users:
        messagingSenderId: "YOUR_SENDER_ID",
        appId: "YOUR_APP_ID"
    };
-   ```
-
----
-
-## 📁 Repository Files
-```
-Topper-promax/
-├── index.html   # Main web page structure
-├── style.css    # Glassmorphism dark mode styles & animations
-├── script.js    # Firebase real-time sync, ranking logic, and host protection
-└── README.md    # Documentation and setup instructions
-```
-
----
-
-## 🚀 Deploying to GitHub Pages
-1. Push all 4 files (`index.html`, `style.css`, `script.js`, `README.md`) to your GitHub repository.
-2. Navigate to **Settings > Pages** in your GitHub repository.
-3. Under **Build and deployment**, set branch to `main` and folder to `/ (root)`.
-4. Click **Save**. Your site will be published with live scores across all visitors!
