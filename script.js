@@ -12,7 +12,7 @@ import {
     getDocs 
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-// IMPORTANT: Replace this Firebase configuration object with your own Firebase Project details!
+// Firebase Configuration Object
 const firebaseConfig = {
     apiKey: "YOUR_API_KEY",
     authDomain: "YOUR_PROJECT.firebaseapp.com",
